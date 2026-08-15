@@ -3,14 +3,15 @@ on:
   issues:
     types: [labeled]
 
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
 jobs:
   opencode:
     uses: ianloubser/code-monkey/.github/workflows/reusable-opencode.yml@main
-    permissions:
-      contents: write
-      pull-requests: write
-      issues: write
-      id-token: write
     with:
       agent: build
       timeout_minutes: 30
