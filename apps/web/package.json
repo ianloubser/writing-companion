@@ -1,0 +1,31 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@repo/types": "workspace:*",
+    "@udecode/plate": "^49.0.0",
+    "@udecode/plate-basic-elements": "^49.0.0",
+    "@udecode/plate-basic-marks": "^49.0.0",
+    "@udecode/slate": "^49.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "use-debounce": "^10.0.0",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.0"
+  }
+}
