@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
+    "db:generate": "wrangler d1 execute writing-companion --local --file=../../packages/db/schema.sql",
     "deploy": "wrangler deploy"
   },
   "dependencies": {

@@ -13,8 +13,7 @@
     "build": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit",
-    "db:generate": "wrangler d1 migrations apply writing-companion --local"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "better-auth": "^1.2.0"

@@ -34,7 +34,7 @@ pnpm --filter web dev    # SPA on :5173, proxies /api to the worker
 Create the local D1 database (first time):
 
 ```bash
-pnpm --filter db db:generate
+pnpm --filter api db:generate
 ```
 
 Set `database_id` in `apps/api/wrangler.toml` and replace the dev-only
